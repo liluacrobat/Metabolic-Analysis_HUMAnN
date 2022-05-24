@@ -73,4 +73,5 @@ cd genefamilies_split_stratified
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_GO.tsv -g uniref90_go
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_KO.tsv -g uniref90_ko
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_level4ec.tsv -g uniref90_level4ec
+humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_MetaCyCreaction.tsv -g uniref90_rxn
 ```
