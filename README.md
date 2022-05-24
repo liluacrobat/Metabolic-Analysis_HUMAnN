@@ -43,4 +43,8 @@ echo '--------------------'
 
 ## Post-processing
 ### Collect Table
+```
+mkdir tsv_table_raw
+for x in *_humann_result; do cp $x/*.tsv tsv_table_raw/.;done
+```
 ### Regroup Table
