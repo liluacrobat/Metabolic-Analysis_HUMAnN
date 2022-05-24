@@ -55,8 +55,8 @@ for x in *_humann_result; do cp $x/*_pathcoverage.tsv tsv_table_raw/pathcoverage
 ### Join Table
 ```
 cd tsv_table_raw
-humann_join_tables --input genefamilies --output genefamilies_joined
-humann_join_tables --input pathabundance --output pathabundance_joined
-humann_join_tables --input pathcoverage --output pathcoverage_joined
+humann_join_tables --input genefamilies --output genefamilies_joined.tsv
+humann_join_tables --input pathabundance --output pathabundance_joined.tsv
+humann_join_tables --input pathcoverage --output pathcoverage_joined.tsv
 ```
 ### Regroup Table
