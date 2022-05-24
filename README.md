@@ -60,3 +60,8 @@ humann_join_tables --input pathabundance --output pathabundance_joined.tsv
 humann_join_tables --input pathcoverage --output pathcoverage_joined.tsv
 ```
 ### Regroup Table
+```
+humann_split_stratified_table --input genefamilies_joined.tsv --output genefamilies_split_stratified
+humann_split_stratified_table --input pathabundance_joined.tsv --output pathabundance_split_stratified
+humann_split_stratified_table --input pathcoverage_joined.tsv --output pathcoverage_split_stratified
+```
