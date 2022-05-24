@@ -80,5 +80,4 @@ humann_rename_table --i genefamilies_joined_unstratified_KO.tsv -n kegg-ortholog
 humann_rename_table --i genefamilies_joined_unstratified_level4ec.tsv -n ec -o genefamilies_joined_unstratified_level4ec_w_anno.tsv
 humann_rename_table --i genefamilies_joined_unstratified_MetaCyCreaction.tsv -n metacyc-rxn -o genefamilies_joined_unstratified_MetaCyCreaction_w_anno.tsv
 humann_rename_table --i genefamilies_joined_unstratified.tsv -n uniref90 -o genefamilies_joined_unstratified_UniRef90_w_anno.tsv
-
 ```
