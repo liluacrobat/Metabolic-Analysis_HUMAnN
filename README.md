@@ -52,4 +52,11 @@ for x in *_humann_result; do cp $x/*_genefamilies.tsv tsv_table_raw/genefamilies
 for x in *_humann_result; do cp $x/*_pathabundance.tsv tsv_table_raw/pathabundance/.;done
 for x in *_humann_result; do cp $x/*_pathcoverage.tsv tsv_table_raw/pathcoverage/.;done
 ```
+### Join Table
+```
+cd tsv_table_raw
+humann_join_tables --input genefamilies --output genefamilies_joined
+humann_join_tables --input pathabundance --output pathabundance_joined
+humann_join_tables --input pathcoverage --output pathcoverage_joined
+```
 ### Regroup Table
