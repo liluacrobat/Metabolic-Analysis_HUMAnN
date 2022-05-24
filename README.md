@@ -45,6 +45,11 @@ echo '--------------------'
 ### Collect Table
 ```
 mkdir tsv_table_raw
-for x in *_humann_result; do cp $x/*.tsv tsv_table_raw/.;done
+mkdir tsv_table_raw/genefamilies
+mkdir tsv_table_raw/pathabundance
+mkdir tsv_table_raw/pathcoverage
+for x in *_humann_result; do cp $x/*_genefamilies.tsv tsv_table_raw/genefamilies/.;done
+for x in *_humann_result; do cp $x/*_pathabundance.tsv tsv_table_raw/pathabundance/.;done
+for x in *_humann_result; do cp $x/*_pathcoverage.tsv tsv_table_raw/pathcoverage/.;done
 ```
 ### Regroup Table
