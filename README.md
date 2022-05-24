@@ -1,6 +1,6 @@
 # Metabolic-Analysis using HUMAnN
 Install database
-## 
+##  Install HUMAnN
 ```
 #!/bin/sh
 #SBATCH --partition=general-compute
@@ -16,9 +16,8 @@ conda activate /projects/academic/pidiazmo/projectsoftwares/metaphlan3
 humann_databases --download chocophlan full /projects/academic/pidiazmo/projectsoftwares/HUMAnN_database --update-config yes
 humann_databases --download uniref uniref90_diamond /projects/academic/pidiazmo/projectsoftwares/HUMAnN_database --update-config yes
 humann_databases --download utility_mapping full /projects/academic/pidiazmo/projectsoftwares/HUMAnN_database --update-config yes
-
-
 ```
+## Run HUMAnN with Sequences Processed by Kneaddata
 ```
 #!/bin/sh
 #SBATCH --partition=general-compute
@@ -41,3 +40,7 @@ echo 'Succeed'
 echo '--------------------'
 
 ```
+
+## Post-processing
+### Collect Table
+### Regroup Table
