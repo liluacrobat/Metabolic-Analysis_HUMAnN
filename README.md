@@ -59,9 +59,18 @@ humann_join_tables --input genefamilies --output genefamilies_joined.tsv
 humann_join_tables --input pathabundance --output pathabundance_joined.tsv
 humann_join_tables --input pathcoverage --output pathcoverage_joined.tsv
 ```
-### Regroup Table
+### Split Table
 ```
 humann_split_stratified_table --input genefamilies_joined.tsv --output genefamilies_split_stratified
 humann_split_stratified_table --input pathabundance_joined.tsv --output pathabundance_split_stratified
 humann_split_stratified_table --input pathcoverage_joined.tsv --output pathcoverage_split_stratified
+```
+### Regroup Table
+-g {uniref90_rxn,uniref50_rxn,uniref50_go,uniref90_go,uniref50_ko,uniref90_ko,uniref50_level4ec,uniref90_level4ec,uniref50_pfam,uniref90_pfam,uniref50_eggnog,uniref90_eggnog}, --groups {uniref90_rxn,uniref50_rxn,uniref50_go,uniref90_go,uniref50_ko,uniref90_ko,uniref50_level4ec,uniref90_level4ec,uniref50_pfam,uniref90_pfam,uniref50_eggnog,uniref90_eggnog}
+
+```
+cd genefamilies_split_stratified
+humann_regroup_table --input genefamilies_joined_unstratified.tsv -output genefamilies_joined_unstratified_GO.tsv --groups uniref90_go
+humann_regroup_table --input genefamilies_joined_unstratified.tsv -output genefamilies_joined_unstratified_KO.tsv --groups uniref90_ko
+humann_regroup_table --input genefamilies_joined_unstratified.tsv -output genefamilies_joined_unstratified_level4ec.tsv --groups uniref90_level4ec
 ```
