@@ -74,6 +74,8 @@ humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joi
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_KO.tsv -g uniref90_ko
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_level4ec.tsv -g uniref90_level4ec
 humann_regroup_table -i genefamilies_joined_unstratified.tsv -o genefamilies_joined_unstratified_MetaCyCreaction.tsv -g uniref90_rxn
+humann_regroup_table -i genefamilies_joined_unstratified_level4ec.tsv -o genefamilies_joined_unstratified_KEGGpwy.tsv -g uniref90_rxn
+
 
 humann_rename_table --i genefamilies_joined_unstratified_GO.tsv -n go -o genefamilies_joined_unstratified_GO_w_anno.tsv
 humann_rename_table --i genefamilies_joined_unstratified_KO.tsv -n kegg-orthology -o genefamilies_joined_unstratified_KO_w_anno.tsv
